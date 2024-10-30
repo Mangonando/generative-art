@@ -18,14 +18,16 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Running the Project
 To run the project locally, use the command:
 
-  ```bash
-  npm run start
+   ```bash
+   npm run start
+   ```
 
 ### Switching Between Art Pieces
 To run different pieces of art, open the `index.html` file and change the file referenced in the `<script>` tag. For example:
 
-  ```html
-  <script src="/art/rects.js"></script>
+   ```html
+   <script src="/art/rects.js"></script>
+   ```
 Replace rects.js with the filename of the art piece you want to display.
 
 ### Project Structure
