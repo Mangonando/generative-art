@@ -1,0 +1,30 @@
+{
+  "color": {
+    "beige": {
+      "cream": "#F1EFE9"
+    },
+    "black": "#000000",
+    "blue": {
+      "arctic": "#AEE6ED",
+      "rey": "#004FD6"
+    },
+    "green": {
+      "dark": "#06443B"
+    },
+    "pink": {
+      "panther": "#FF72B6",
+      "royal": "#DBB8FF"
+    },
+    "purple": {
+      "electric": "#3939FF"
+    },
+    "red": {
+      "dareDevil": "#FF5B22"
+    },
+    "white": "#FFFFFF",
+    "yellow": {
+      "gold": "#F2BB05",
+      "sun": "#FFEE51"
+    }
+  }
+}
