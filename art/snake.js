@@ -13,6 +13,7 @@ function keyPressed() {
 
 let x = 700;
 let y = 1100;
+let moveDown = true;
 
 function setup() {
   // Frame 50x70 cm
@@ -30,12 +31,26 @@ function setup() {
 
 function draw() {
   // 5000 is 5 seconds 10000 is 10 seconds etc
-  if (millis() - startTime > 3000) {
+  if (millis() - startTime > 10000) {
     noLoop();
     return;
   }
 
   rect(x, y, 100, 100);
-  x += random(-100, 100);
-  y += random(-100, 100);
+
+  if (moveDown) {
+    y += 100 + random(-10, 10);
+    if (y > height - 100) {
+      y = 100;
+      x += 100 + random(-10, 10);
+    }
+  } else {
+    x += 100 + random(-10, 10);
+    if (x > width - 100) {
+      x = 100;
+      y += 100 + random(-10, 10);
+    }
+  }
+
+  moveDown = !moveDown;
 }
